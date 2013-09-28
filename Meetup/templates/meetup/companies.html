@@ -1,0 +1,11 @@
+{% load url from future %}
+<table>
+<tr>
+  <th>Company Name</th>
+</tr>
+{% for comp in obj %}
+<tr>
+  <td>{{comp.name}}</td>
+</tr>
+{% endfor %}
+</table>

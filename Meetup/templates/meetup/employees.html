@@ -1,0 +1,47 @@
+{% load url from future %}
+<table>
+<tr>
+  <th>Name</th>
+  <th>User Id</th>
+  <th>Title</th>
+  <th>Member Id</th>
+  <th>Company</th>
+  <th>Joined Group on</th>
+  <th>Last visited group on</th>
+  <th>Last Attended</th>
+  <th>Total RSVPs</th>
+  <th>RSVPed Yes</th>
+  <th>RSVPed Maybe</th>
+  <th>RSVPed No</th>
+  <th>Meetups Attended</th>
+  <th>No Shows</th>
+  <th>Intro</th>
+  <th>Photo</th>
+  <th>Assistant Organizer</th>
+  <th>Mailing List</th>
+  <th>URL of Member Profile</th>
+</tr>
+{% for emp in obj %}
+<tr>
+  <td>{{emp.Name}}</td>
+  <td>{{emp.User_ID}}</td>
+  <td>{{emp.Title}}</td>
+  <td>{{emp.Member_ID}}</td>
+  <td>{{emp.Company}}</td>
+  <td>{{emp.Joined_Group_on}}</td>
+  <td>{{emp.Last_visited_group_on}}</td>
+  <td>{{emp.Last_Attended}}</td>
+  <td>{{emp.Total_RSVPs}}</td>
+  <td>{{emp.RSVPed_Yes}}</td>
+  <td>{{emp.RSVPed_Maybe}}</td>
+  <td>{{emp.RSVPed_No}}</td>
+  <td>{{emp.Meetups_attended}}</td>
+  <td>{{emp.No_shows}}</td>
+  <td>{{emp.Intro}}</td>
+  <td>{{emp.Photo}}</td>
+  <td>{{emp.Assistant_Organizer}}</td>
+  <td>{{emp.Mailing_List}}</td>
+  <td>{{emp.Url_of_Member_Profile}}</td>
+</tr>
+{% endfor %}
+</table>
